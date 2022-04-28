@@ -2,7 +2,7 @@
 
 Wheels created with dockers available in https://github.com/pypa/manylinux 
 
-(not yet run: ```auditwheel repair <WHEEL> --plat "manylinux2014_x86_64" -w ../wheels```  )
+(after running ```python setup.py bdist_wheel``` we run ```auditwheel repair <WHEEL> --plat "manylinux2014_x86_64" -w wheels```  )
 
 ## Wheels (source/install)
 

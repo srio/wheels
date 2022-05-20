@@ -20,7 +20,7 @@ in  bob:
 
 - oasys-srwpy: Linux [3.7-3.10], MacOS (intel): [TODO], MacOS (arm): [TODO], Windows [TODO] https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy
 - shadow3: Linux [3.7-3.10], MacOS (intel): [3.7-3.10], MacOS (arm): [TODO], Windows [TODO] https://silx.gitlab-pages.esrf.fr/bob/shadow3
-- xraylib: Linux [3.7-3.10], MacOS (intel): [3.7-3.10], MacOS (arm): [TODO], Windows [NOT AVAILABLE] https://silx.gitlab-pages.esrf.fr/bob/xraylib
+- xraylib: Linux [3.7-3.10], MacOS (intel): [3.7-3.10], MacOS (arm): [TODO], Windows [NOT WORKING] https://silx.gitlab-pages.esrf.fr/bob/xraylib
 
 in pypi: 
 

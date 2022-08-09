@@ -36,12 +36,12 @@ in shadow3 github:
 
 ## Other information
 
-## For Oasys: 
+### For Oasys: 
 
 - xraylib 4.1.2 [at least in MacOS] does not work with Oasys standard numpy 1.19.2 but requires a higher version (it works with 1.21.6)
 - Before upgrading Shadow in MacOS, remove the old installation ```rm -rf  /Applications/Oasys1.2.app/Contents/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Shadow/``
 
-### bob repositories (source/install)
+### bob repositories and install command
 
 - SRW: https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy/ ```pip install oasys1-srwpy --pre --find-links https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy/```
 - SHADOW3: https://silx.gitlab-pages.esrf.fr/bob/shadow3/ ```pip install shadow3 --pre --find-links https://silx.gitlab-pages.esrf.fr/bob/shadow3/```

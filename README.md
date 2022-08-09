@@ -72,9 +72,10 @@ sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /
 yum update -y
 yum install wget
 yum install git
+
 ```
 
-### Upgrade instructions
+### SHADOW test wheels - installation instructions
 
 For safety:
 

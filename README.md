@@ -24,7 +24,7 @@ in  bob:
 
 in pypi: 
 
-- oasys-srwpy v 1.0.5: Linux [3.7], MacOS: [3.7], Windows [3.7] https://pypi.org/project/oasys-srwpy/
+- oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS: [3.7], Windows [3.7-3.10] https://pypi.org/project/oasys-srwpy/
 - shadow3 v 18.5.30: Linux [3.7], MacOS (intel): [3.7], Windows [3.7] https://pypi.org/project/shadow3
 - xraylib v 4.1.1: Linux [3.7-3.10], MacOS (intel): [3.7], Windows [NOT AVAILABLE] https://pypi.org/project/xraylib
 

@@ -19,14 +19,14 @@ The creationof wheels for different python version is automated using the ESRF b
 in  bob: 
 
 - oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS (x86_64): [TODO], Windows [TODO] https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy
-- shadow3 v 22.8.20: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://silx.gitlab-pages.esrf.fr/bob/shadow3
-- xraylib v 4.1.2: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT WORKING] https://silx.gitlab-pages.esrf.fr/bob/xraylib
+- shadow3 v 22.8.25: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://silx.gitlab-pages.esrf.fr/bob/shadow3
+- xraylib v 4.1.3: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT WORKING] https://silx.gitlab-pages.esrf.fr/bob/xraylib
 
 in pypi: 
 
 - oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS (x86_64): [3.7], Windows [3.7-3.10] https://pypi.org/project/oasys-srwpy/
-- shadow3 v 22.8.10[.1]: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://pypi.org/project/shadow3
-- xraylib v 4.1.2: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT AVAILABLE] https://pypi.org/project/xraylib
+- shadow3 v 22.8.25[.1]: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://pypi.org/project/shadow3
+- xraylib v 4.1.3: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT AVAILABLE] https://pypi.org/project/xraylib
 
 
 

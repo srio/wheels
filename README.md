@@ -18,14 +18,14 @@ The creationof wheels for different python version is automated using the ESRF b
 
 in  bob: 
 
-- oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS (x86_64): [TODO], Windows [TODO] https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy
-- shadow3 v 22.8.25: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://silx.gitlab-pages.esrf.fr/bob/shadow3
+- oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [TODO] https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy
+- shadow3 v 23.1.4: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://silx.gitlab-pages.esrf.fr/bob/shadow3
 - xraylib v 4.1.3: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT WORKING] https://silx.gitlab-pages.esrf.fr/bob/xraylib
 
 in pypi: 
 
 - oasys-srwpy v 1.0.5: Linux [3.7-3.10], MacOS (x86_64): [3.7], Windows [3.7-3.10] https://pypi.org/project/oasys-srwpy/
-- shadow3 v 22.8.25[.1]: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://pypi.org/project/shadow3
+- shadow3 v 23.1.4: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [3.7-3.10] https://pypi.org/project/shadow3
 - xraylib v 4.1.3: Linux [3.7-3.10], MacOS (x86_64): [3.7-3.10], Windows [NOT AVAILABLE] https://pypi.org/project/xraylib
 
 
@@ -37,11 +37,6 @@ in pypi:
 - xraylib 4.1.2 [at least in MacOS] does not work with Oasys standard numpy 1.19.2 but requires a higher version (it works with 1.21.6)
 - Before upgrading Shadow in MacOS, remove the old installation ```rm -rf  /Applications/Oasys1.2.app/Contents/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Shadow/``
 
-### bob repositories and install command
-
-- SRW: https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy/ ```pip install oasys1-srwpy --pre --find-links https://silx.gitlab-pages.esrf.fr/bob/oasys1-srwpy/```
-- SHADOW3: https://silx.gitlab-pages.esrf.fr/bob/shadow3/ ```pip install shadow3 --pre --find-links https://silx.gitlab-pages.esrf.fr/bob/shadow3/```
-- XRAYLIB: https://silx.gitlab-pages.esrf.fr/bob/xraylib/ ```pip install xraylib --pre --find-links https://silx.gitlab-pages.esrf.fr/bob/xraylib/```
 
 ### Docker memorandum:
 
@@ -68,5 +63,15 @@ sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /
 yum update -y
 yum install wget
 yum install git
+
+```
+
+### Update pypi with bob wheels:
+```
+cd shadow3/dist
+wget -r -nd --no-parent -A '*.gz' https://silx.gitlab-pages.esrf.fr/bob/shadow3/
+wget -r -nd --no-parent -A '*.whl' https://silx.gitlab-pages.esrf.fr/bob/shadow3/
+cd ..
+python -m twine upload dist/*
 
 ```
